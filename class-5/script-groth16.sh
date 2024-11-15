@@ -27,6 +27,8 @@ snarkjs groth16 setup ${CIRCUIT_NAME}.r1cs ../powersOfTau28_hez_final_${TAU_SIZE
 
 echo "----- Contribute to the phase 2 of the ceremony -----"
 snarkjs zkey contribute ${CIRCUIT_NAME}_0000.zkey ${CIRCUIT_NAME}_final.zkey --name="mihailo" -v
+# the zkey contribute command creates a zkey file with new contribution
+# we can also add more contribuitons after this one as in plonk example for phase 1
 
 echo "----- Export the verification key -----"
 snarkjs zkey export verificationkey ${CIRCUIT_NAME}_final.zkey verification_key.json
