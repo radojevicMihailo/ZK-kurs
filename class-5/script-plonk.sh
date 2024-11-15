@@ -3,7 +3,7 @@ set -e
 
 CIRCUIT_NAME="circuit"
 INPUT_NAME="inputs"
-ARTIFACTS_PATH="artifacts-plonk"
+ARTIFACTS_PATH="artifacts-plonk-2"
 TAU_SIZE="12"
 
 # compile
