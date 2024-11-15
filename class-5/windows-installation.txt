@@ -1,0 +1,22 @@
+//--Download rustup-init.exe and Run Rust from: 
+https://rustup.rs/
+
+//--Check version for:	
+rustup --version
+cargo --version
+
+//--Install circom:
+cargo install --locked --git https://github.com/iden3/circom circom
+
+//--Go in circom folder
+cd circom
+
+//--Install
+cargo install --path circom
+
+//--Should be available
+circom --help
+
+//--Install snarkjs
+npm install -g snarkjs
+
