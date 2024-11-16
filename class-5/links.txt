@@ -1,0 +1,11 @@
+Circom installation for macOS and Linux
+https://docs.circom.io/getting-started/installation/#installing-dependencies
+
+Circom installation for Windows
+https://github.com/radojevicMihailo/ZK-kurs/blob/master/class-5/windows-installation.txt
+
+Powers of Tau ceremony explanation
+https://github.com/iden3/snarkjs?tab=readme-ov-file
+
+Powers of Tau ceremony
+https://github.com/privacy-scaling-explorations/perpetualpowersoftau
