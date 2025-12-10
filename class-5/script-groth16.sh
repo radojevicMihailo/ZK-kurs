@@ -23,24 +23,24 @@ node ${CIRCUIT_NAME}_js/generate_witness.js ${CIRCUIT_NAME}_js/${CIRCUIT_NAME}.w
 # tau ceremony
 
 echo "----- Setup -----"
-snarkjs groth16 setup ${CIRCUIT_NAME}.r1cs ../powersOfTau28_hez_final_${TAU_SIZE}.ptau ${CIRCUIT_NAME}_0000.zkey
+npx snarkjs groth16 setup ${CIRCUIT_NAME}.r1cs ../powersOfTau28_hez_final_${TAU_SIZE}.ptau ${CIRCUIT_NAME}_0000.zkey
 
 echo "----- Contribute to the phase 2 of the ceremony -----"
-snarkjs zkey contribute ${CIRCUIT_NAME}_0000.zkey ${CIRCUIT_NAME}_final.zkey --name="mihailo" -v
+npx snarkjs zkey contribute ${CIRCUIT_NAME}_0000.zkey ${CIRCUIT_NAME}_final.zkey --name="mihailo" -v
 # the zkey contribute command creates a zkey file with new contribution
 # we can also add more contribuitons after this one as in plonk example for phase 1
 
 echo "----- Export the verification key -----"
-snarkjs zkey export verificationkey ${CIRCUIT_NAME}_final.zkey verification_key.json
+npx snarkjs zkey export verificationkey ${CIRCUIT_NAME}_final.zkey verification_key.json
 
 echo "----- Create the proof -----"
-snarkjs groth16 prove ${CIRCUIT_NAME}_final.zkey witness.wtns proof.json public.json
+npx snarkjs groth16 prove ${CIRCUIT_NAME}_final.zkey witness.wtns proof.json public.json
 
 echo "----- Verify the proof -----"
-snarkjs groth16 verify verification_key.json public.json proof.json
+npx snarkjs groth16 verify verification_key.json public.json proof.json
 
 echo "----- Turn the verifier into a smart contract -----"
-snarkjs zkey export solidityverifier ${CIRCUIT_NAME}_final.zkey verifier.sol
+npx snarkjs zkey export solidityverifier ${CIRCUIT_NAME}_final.zkey verifier.sol
 
 echo "----- Simulate a verification call -----"
-snarkjs zkey export soliditycalldata public.json proof.json
+npx snarkjs zkey export soliditycalldata public.json proof.json
