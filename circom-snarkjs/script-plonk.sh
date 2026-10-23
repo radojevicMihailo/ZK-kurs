@@ -32,7 +32,7 @@ npx snarkjs powersoftau new bn128 ${TAU_SIZE} pot${TAU_SIZE}_0000.ptau -v
 echo "----- Contribute to the ceremony -----"
 npx snarkjs powersoftau contribute pot${TAU_SIZE}_0000.ptau pot${TAU_SIZE}_0001.ptau --name="marija" -v -e="8YdOZ'bB,z0gr{%ny?x4{*W5Top~VkE_7:P#eB5wY4aM/?R"
 # the contribute command creates a ptau file with a new contribution
-# contribute takes as input the transcript of the protocol so far and outputs a new transcript whic includes
+# contribute takes as input the transcript of the protocol so far and outputs a new transcript which includes
 # the computation carried out by new contributor
 # the -e parameter allows contribute to be non-interactive
 

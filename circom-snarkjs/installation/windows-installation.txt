@@ -1,0 +1,31 @@
+//--Requires Node.js (for snarkjs):
+https://nodejs.org/
+
+//--Download rustup-init.exe and Run Rust from:
+https://rustup.rs/
+//--If rustup-init offers to install Visual Studio C++ Build Tools, accept it (Rust needs them)
+
+//--Open a new PowerShell window and check version for:
+rustup --version
+cargo --version
+
+//--Install circom (downloads, builds and installs it, no need to clone the repository)
+cargo install --locked --git https://github.com/iden3/circom circom
+
+//--Should be available
+circom --help
+
+//--Install snarkjs
+npm install -g snarkjs
+
+//--Install the dependencies of the examples (run in the circom-snarkjs folder)
+npm install
+
+//--Run the scripts
+//--Windows blocks .ps1 scripts by default ("running scripts is disabled on this system"),
+//--so run them with -ExecutionPolicy Bypass:
+powershell -ExecutionPolicy Bypass -File .\script-groth16.ps1
+powershell -ExecutionPolicy Bypass -File .\script-plonk.ps1
+
+//--script-groth16.ps1 stops at "zkey contribute" and asks for random text (entropy),
+//--type anything and press Enter

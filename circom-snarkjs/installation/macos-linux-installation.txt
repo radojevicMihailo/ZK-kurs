@@ -1,0 +1,38 @@
+//--Official guide:
+https://docs.circom.io/getting-started/installation/#installing-dependencies
+
+//--Requires Node.js (for snarkjs) and git:
+https://nodejs.org/
+//--macOS: install command line tools (git + C compiler)
+xcode-select --install
+//--Linux (Ubuntu/Debian): C compiler, needed if cargo fails with "linker `cc` not found"
+sudo apt install build-essential
+
+//--Install Rust
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+//--Open a new terminal (or run the command below) and check version
+source "$HOME/.cargo/env"
+rustc --version
+cargo --version
+
+//--Build and install circom
+git clone https://github.com/iden3/circom.git
+cd circom
+cargo build --release
+cargo install --path circom
+
+//--Should be available
+circom --help
+
+//--Install snarkjs
+npm install -g snarkjs
+
+//--Install the dependencies of the examples (run in the circom-snarkjs folder)
+npm install
+
+//--Run the scripts
+bash script-groth16.sh
+bash script-plonk.sh
+
+//--script-groth16.sh stops at "zkey contribute" and asks for random text (entropy),
+//--type anything and press Enter
