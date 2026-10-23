@@ -23,9 +23,6 @@ npm install
 | `script-groth16.sh` / `.ps1` | Compile, witness, Groth16 setup, prove, verify, Solidity verifier |
 | `script-plonk.sh` / `.ps1` | Compile, witness, own powers of tau ceremony, PLONK setup, prove, verify |
 | `proving-groth16.js` / `proving-plonk.js` | Proving and verifying in JavaScript (run after the scripts) |
-| `buses-example.circom` | Signal buses example (Circom 2.2.0) |
-| `generate-inputs-buses.js` | Generates `inputs-buses.json` for `buses-example.circom` |
-| `proving-buses-groth16.js` | Proving the buses example in JavaScript |
 | `links.txt` | Links from the presentation |
 
 `script-groth16.*` uses `powersOfTau28_hez_final_12.ptau` (phase 1 of a public ceremony), download it into this folder from the [snarkjs README](https://github.com/iden3/snarkjs?tab=readme-ov-file).
