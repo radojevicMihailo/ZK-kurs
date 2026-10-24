@@ -5,7 +5,7 @@ async function generate(number, solution, inputsFilename) {
     const numberBigInt = BigInt(number);
     const solutionBigInt = BigInt(solution);
 
-    const salt = BigInt(123543578123736283);
+    const salt = 123543578123736283n;
     const commit = poseidon2([solutionBigInt, salt]);
 
     writeFileSync(inputsFilename, JSON.stringify({
