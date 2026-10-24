@@ -17,7 +17,7 @@ npm install
 
 | File | Description |
 | --- | --- |
-| `ZKP MA - Circom i snarkjs.pptx` | Presentation |
+| `ZKP MA - Circom i snarkjs.pdf` / `.pptx` | Presentation |
 | `circuit.circom` | Guess the number circuit (Poseidon commitment + `IsEqual`) |
 | `generate-inputs.js` | Generates `inputs.json` for `circuit.circom` |
 | `script-groth16.sh` / `.ps1` | Compile, witness, Groth16 setup, prove, verify, Solidity verifier |
