@@ -1,0 +1,38 @@
+MACI documentation
+https://maci.pse.dev/docs/introduction
+
+MACI GitHub repository (archived, read-only)
+https://github.com/privacy-scaling-explorations/maci
+
+MACI v3.0.0 release
+https://github.com/privacy-scaling-explorations/maci/releases/tag/v3.0.0
+
+Anonymous poll joining (blog, 3327)
+https://maci.pse.dev/blog/anonymous-poll-joining
+
+Anonymous poll joining (3327 prototype branch)
+https://github.com/0x3327/maci/tree/feat/anon-poll-joining
+
+PR #2063: same key for every poll
+https://github.com/privacy-scaling-explorations/maci/pull/2063
+
+Key change
+https://maci.pse.dev/docs/core-concepts/key-change
+
+Poll types
+https://maci.pse.dev/docs/core-concepts/poll-types
+
+2025 roadmap
+https://maci.pse.dev/blog/2025-Roadmap
+
+Coordinator service
+https://maci.pse.dev/blog/maci-coordinator-service
+
+MACI with mostly off-chain happy path (Vitalik)
+https://ethresear.ch/t/maci-with-mostly-off-chain-happy-path/19527
+
+MACI project status on pse.dev
+https://pse.dev/en/projects/maci
+
+Minimal anti-collusion infrastructure (Vitalik, 2019)
+https://ethresear.ch/t/minimal-anti-collusion-infrastructure/5413
