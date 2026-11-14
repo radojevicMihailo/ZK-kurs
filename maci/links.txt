@@ -7,6 +7,9 @@ https://github.com/privacy-scaling-explorations/maci
 MACI v3.0.0 release
 https://github.com/privacy-scaling-explorations/maci/releases/tag/v3.0.0
 
+ElGamal key change (3327, 2023), issue #796
+https://github.com/privacy-ethereum/maci/issues/796
+
 Anonymous poll joining (blog, 3327)
 https://maci.pse.dev/blog/anonymous-poll-joining
 
@@ -33,6 +36,15 @@ https://ethresear.ch/t/maci-with-mostly-off-chain-happy-path/19527
 
 MACI project status on pse.dev
 https://pse.dev/en/projects/maci
+
+Reflecting on MACI Platform: why it was sunset (PSE, May 2025)
+https://pse.dev/blog/reflecting-on-maci-platform
+
+Ethereum Foundation structure (June 2026)
+https://blog.ethereum.org/2026/06/23/ef-structure
+
+EF cuts budget 40%, winds down PSE (CoinMarketCap, June 2026)
+https://coinmarketcap.com/academy/en/article/ethereum-foundation-cuts-budget-jobs-2026
 
 Minimal anti-collusion infrastructure (Vitalik, 2019)
 https://ethresear.ch/t/minimal-anti-collusion-infrastructure/5413
